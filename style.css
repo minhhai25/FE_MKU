@@ -13,9 +13,9 @@ section {
   width: 100%;
   margin-bottom: 2rem;
 }
-.row {
+/* .row {
   width: 100%;
-}
+} */
 
 p {
   margin-bottom: 0rem;
@@ -74,7 +74,7 @@ p {
   text-decoration: none;
 }
 .img-date {
-  top: 53%;
+  top: 55%;
   left: 7%;
 }
 /* .kham-pha-container {
@@ -149,6 +149,9 @@ p {
 .title a {
   text-decoration: none;
   text-align: end;
+}
+.title h5 {
+  margin-top: 1rem;
 }
 #hop-tac-qt a:hover {
   color: #533b73;
@@ -250,6 +253,9 @@ p {
 .slider {
   width: 100%;
 }
+.slider-dao-tao {
+  width: 100%;
+}
 /* responsive
  */
 /* Mobile: dưới 768px */
@@ -293,6 +299,15 @@ p {
   .item-khoa-hoc {
     height: 19rem !important;
   }
+  .title h5 {
+    margin-top: 0;
+  }
+  .slider-dao-tao.row.slick-initialized.slick-slider {
+    width: 80%;
+  }
+  .slide-sinhvien.d-flex.align-items-center.position-relative {
+    width: 80%;
+  }
 }
 
 /* Tablet: từ 768px đến 991px */
@@ -316,16 +331,31 @@ p {
     font-size: 10px;
   }
   .item {
-    height: 21rem;
+    height: 16rem;
   }
   .item-khoa-hoc {
-    height: 19rem;
+    height: 16rem;
   }
   .section-footer {
     margin-top: 1.5rem;
   }
+  .img-date {
+    top: 37%;
+    left: 7%;
+  }
+  .slider-dao-tao {
+    width: 80%;
+  }
+  .slide-sinhvien.d-flex.align-items-center.position-relative {
+    width: 90%;
+  }
 }
-
+@media (min-width: 992px) {
+  .img-date {
+    top: 37%;
+    left: 7%;
+  }
+}
 /* Desktop: từ 992px trở lên */
 @media (min-width: 992px) {
   * {
