@@ -282,6 +282,9 @@ p {
 .highlight {
   font-weight: bold;
 }
+.small-head p {
+  font-size: 13px;
+}
 /* responsive
  */
 /* Mobile: dưới 768px */
@@ -319,13 +322,15 @@ p {
     font-size: 8px;
   }
   .item {
-    height: 21rem;
+    height: 22rem;
   }
   .section-footer {
     margin-top: 0.5rem;
   }
   .item-khoa-hoc {
     height: 19rem !important;
+    width: 70%;
+    margin: auto;
   }
   .title h5 {
     margin-top: 0;

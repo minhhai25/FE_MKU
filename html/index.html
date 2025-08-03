@@ -4,60 +4,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/globals.css" />
-  
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
+
+    <!-- CSS Bootstrap (thư viện chung) -->
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" />
+
+    <!-- CSS Slick Carousel (thư viện slider) -->
+    <link rel="stylesheet" type="text/css" href="../css/slick/slick.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+      href="../css/slick/slick-theme.css"
     />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS Font Awesome (icon) -->
+    <link
+      rel="stylesheet"
+      href="../css/fontawesome/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <section class="index">
       <div class="header">
         <div class="small-head d-flex container">
-          <div
-            class="overlap-group d-flex align-items-center justify-content-center"
-          >
-            <!-- <img
-                class="rectangle"
-                src="https://c.animaapp.com/mdrent4ttKlpku/img/rectangle-1.png"
-              /> -->
-            <img class="logo-DHCL" src="../images/logo-truong.png" />
-            <p class="TR-NG-i-h-c-c-u-LONG">
-              <span class="span">TRƯỜNG ĐẠI HỌC CỬU LONG<br /></span>
-              <span class="text-wrapper-2"
-                >Toàn diện – Sáng tạo – Hội nhập – Phát triển</span
-              >
-            </p>
-            <p class="element">02703832538</p>
+          <div class="row w-100 align-items-center">
+            <div class="col-4 d-flex align-items-center">
+              <img class="logo-DHCL me-2" src="../images/logo-truong.png" />
+              <p class="title-truong text-center">
+                <span class="span">TRƯỜNG ĐẠI HỌC CỬU LONG<br /></span>
+                <span class="text-wrapper-2"
+                  >Toàn diện – Sáng tạo – Hội nhập – Phát triển</span
+                >
+              </p>
+            </div>
+            <div class="col-8 d-flex justify-content-between">
+              <p class="element">
+                <img
+                  class="vector me-2"
+                  src="https://c.animaapp.com/mdrent4ttKlpku/img/vector.svg"
+                />02703832538
+              </p>
 
-            <img class="envelope-solid" src="../images/envelope-solid.png" />
-            <p class="element">cuulonguniversity@mku.edu.vn</p>
-            <img
-              class="hand-point-up-solid"
-              src="../images/hand-point-up-solid.png"
-            />
-            <p class="element">
-              Tuyển sinh: Thông báo tuyển sinh Đại học hệ chính quy
-            </p>
+              <p class="element">
+                <img
+                  class="envelope-solid me-2"
+                  src="../images/envelope-solid.png"
+                />cuulonguniversity@mku.edu.vn
+              </p>
+
+              <p class="element">
+                <img
+                  class="hand-point-up-solid me-2"
+                  src="../images/hand-point-up-solid.png"
+                />Tuyển sinh: Thông báo tuyển sinh Đại học hệ chính quy
+              </p>
+            </div>
           </div>
-          <img
-            class="vector"
-            src="https://c.animaapp.com/mdrent4ttKlpku/img/vector.svg"
-          />
         </div>
         <div class="silder-banner">
           <div class="overlap-2">
@@ -107,55 +110,49 @@
                               role="button"
                               aria-expanded="false"
                               aria-controls="gioi-thieu"
+                              data-bs-parent="#navbarMobile"
                               >Giới thiệu</a
                             >
                             <div class="collapse" id="gioi-thieu">
                               <div class="card card-body">
                                 <div class="topic-box">
                                   <div class="topic-title">
-                                 
                                     Chuyên đề WEB - PHP
                                   </div>
                                   <div class="topic-item">
                                     <i class="fa-solid fa-caret-right"></i>
                                     Lập trình web với HTML5 - CSS3 - JQuery -
-                                    Bootstrap - Ajax > – [36 giờ]
+                                    Bootstrap - Ajax – [36 giờ]
                                   </div>
                                   <div class="topic-item">
-                                     <i class="fa-solid fa-caret-right"></i>
-                                    Lập trình web
-                                   
-                                      frontend - reactjs</span
-                                    >
-                                    – [75 giờ]
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    Lập trình web frontend - reactjs – [75 giờ]
                                   </div>
-                                  <div class="topic-item ">
-                                     <i class="fa-solid fa-caret-right"></i>
-                                    Lập trình web với mã nguồn mở
-                                   
-                                      PHP&MYSQL - PHP FRAMEWORK</span
-                                    >
-                                    [126 giờ]
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    Lập trình web với mã nguồn mở PHP&MYSQL -
+                                    PHP FRAMEWORK [126 giờ]
                                   </div>
                                 </div>
-
                                 <div class="topic-box">
                                   <div class="topic-title">
                                     Chuyên đề Mobile
                                   </div>
-                                  <div class="topic-item"><i class="fa-solid fa-caret-right"></i>
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
                                     Lập trình Games/Apps trên nền tảng Android –
                                     [120 giờ]
                                   </div>
-                                  <div class="topic-item"><i class="fa-solid fa-caret-right"></i>
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
                                     Lập trình Games/Apps trên nền tảng IOS –
                                     [120 giờ]
                                   </div>
                                 </div>
-
                                 <div class="topic-box">
                                   <div class="topic-title">Chuyên đề JAVA</div>
-                                  <div class="topic-item"><i class="fa-solid fa-caret-right"></i>
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
                                     Ngôn ngữ lập trình hướng đối tượng với java
                                     – [40 giờ]
                                   </div>
@@ -170,58 +167,50 @@
                               href="#tuyen-sinh"
                               role="button"
                               aria-expanded="false"
-                              aria-controls="#tuyen-sinh"
+                              aria-controls="tuyen-sinh"
+                              data-bs-parent="#navbarMobile"
                               >Tuyển sinh</a
                             >
                             <div class="collapse" id="tuyen-sinh">
                               <div class="card card-body">
                                 <div class="topic-box">
                                   <div class="topic-title">
-                                    
                                     Chuyên đề WEB - PHP
                                   </div>
                                   <div class="topic-item">
                                     <i class="fa-solid fa-caret-right"></i>
-                                    Lập trình web với
-                                   
-                                      HTML5 - CSS3 - JQuery - Bootstrap -
-                                      Ajax</span
-                                    >
-                                    – [36 giờ]
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]
                                   </div>
-                                  <div class="topic-item"><i class="fa-solid fa-caret-right"></i>
-                                    Lập trình web
-                                   
-                                      frontend - reactjs</span
-                                    >
-                                    – [75 giờ]
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    Lập trình web frontend - reactjs – [75 giờ]
                                   </div>
-                                  <div class="topic-item "> <i class="fa-solid fa-caret-right"></i>
-                                    Lập trình web với mã nguồn mở
-                                   
-                                      PHP&MYSQL - PHP FRAMEWORK</span
-                                    >
-                                    [126 giờ]
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    Lập trình web với mã nguồn mở PHP&MYSQL -
+                                    PHP FRAMEWORK [126 giờ]
                                   </div>
                                 </div>
-
                                 <div class="topic-box">
                                   <div class="topic-title">
                                     Chuyên đề Mobile
                                   </div>
-                                  <div class="topic-item"><i class="fa-solid fa-caret-right"></i>
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
                                     Lập trình Games/Apps trên nền tảng Android –
                                     [120 giờ]
                                   </div>
-                                  <div class="topic-item"><i class="fa-solid fa-caret-right"></i>
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
                                     Lập trình Games/Apps trên nền tảng IOS –
                                     [120 giờ]
                                   </div>
                                 </div>
-
                                 <div class="topic-box">
                                   <div class="topic-title">Chuyên đề JAVA</div>
-                                  <div class="topic-item"><i class="fa-solid fa-caret-right"></i>
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
                                     Ngôn ngữ lập trình hướng đối tượng với java
                                     – [40 giờ]
                                   </div>
@@ -236,38 +225,29 @@
                               href="#dao-tao"
                               role="button"
                               aria-expanded="false"
-                              aria-controls="#dao-tao"
+                              aria-controls="dao-tao"
+                              data-bs-parent="#navbarMobile"
                               >Đào tạo</a
                             >
-                             <div class="collapse" id="dao-tao">
+                            <div class="collapse" id="dao-tao">
                               <div class="card card-body">
                                 <div class="topic-box">
                                   <div class="topic-title">
-                                    
                                     Chuyên đề WEB - PHP
                                   </div>
                                   <div class="topic-item">
                                     <i class="fa-solid fa-caret-right"></i>
-                                    Lập trình web với
-                                   
-                                      HTML5 - CSS3 - JQuery - Bootstrap -
-                                      Ajax</span
-                                    >
-                                    – [36 giờ]
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]
                                   </div>
-                                  <div class="topic-item"><i class="fa-solid fa-caret-right"></i>
-                                    Lập trình web
-                                   
-                                      frontend - reactjs</span
-                                    >
-                                    – [75 giờ]
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    Lập trình web frontend - reactjs – [75 giờ]
                                   </div>
-                                  <div class="topic-item "> <i class="fa-solid fa-caret-right"></i>
-                                    Lập trình web với mã nguồn mở
-                                   
-                                      PHP&MYSQL - PHP FRAMEWORK</span
-                                    >
-                                    [126 giờ]
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    Lập trình web với mã nguồn mở PHP&MYSQL -
+                                    PHP FRAMEWORK [126 giờ]
                                   </div>
                                 </div>
                               </div>
@@ -280,38 +260,29 @@
                               href="#khoa-vien"
                               role="button"
                               aria-expanded="false"
-                              aria-controls="#khoa-vien"
+                              aria-controls="khoa-vien"
+                              data-bs-parent="#navbarMobile"
                               >Các Khoa - Viện</a
                             >
-                              <div class="collapse" id="khoa-vien">
+                            <div class="collapse" id="khoa-vien">
                               <div class="card card-body">
                                 <div class="topic-box">
                                   <div class="topic-title">
-                                    
                                     Chuyên đề WEB - PHP
                                   </div>
                                   <div class="topic-item">
                                     <i class="fa-solid fa-caret-right"></i>
-                                    Lập trình web với
-                                   
-                                      HTML5 - CSS3 - JQuery - Bootstrap -
-                                      Ajax</span
-                                    >
-                                    – [36 giờ]
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]
                                   </div>
-                                  <div class="topic-item"><i class="fa-solid fa-caret-right"></i>
-                                    Lập trình web
-                                   
-                                      frontend - reactjs</span
-                                    >
-                                    – [75 giờ]
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    Lập trình web frontend - reactjs – [75 giờ]
                                   </div>
-                                  <div class="topic-item "> <i class="fa-solid fa-caret-right"></i>
-                                    Lập trình web với mã nguồn mở
-                                   
-                                      PHP&MYSQL - PHP FRAMEWORK</span
-                                    >
-                                    [126 giờ]
+                                  <div class="topic-item">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    Lập trình web với mã nguồn mở PHP&MYSQL -
+                                    PHP FRAMEWORK [126 giờ]
                                   </div>
                                 </div>
                               </div>
@@ -324,9 +295,15 @@
                               href="#khoa-hoc-cong-nghe"
                               role="button"
                               aria-expanded="false"
-                              aria-controls="#khoa-hoc-cong-nghe"
+                              aria-controls="khoa-hoc-cong-nghe"
+                              data-bs-parent="#navbarMobile"
                               >Khoa học công nghệ</a
                             >
+                            <div class="collapse" id="khoa-hoc-cong-nghe">
+                              <div class="card card-body">
+                                <!-- Thêm nội dung nếu cần -->
+                              </div>
+                            </div>
                           </li>
                           <li class="nav-item">
                             <a
@@ -336,8 +313,14 @@
                               role="button"
                               aria-expanded="false"
                               aria-controls="hop-tac-qt"
+                              data-bs-parent="#navbarMobile"
                               >Hợp tác quốc tế</a
                             >
+                            <div class="collapse" id="hop-tac-qt">
+                              <div class="card card-body">
+                                <!-- Thêm nội dung nếu cần -->
+                              </div>
+                            </div>
                           </li>
                           <li class="nav-item">
                             <a
@@ -347,8 +330,14 @@
                               role="button"
                               aria-expanded="false"
                               aria-controls="nghien-cuu-khoa-hoc"
+                              data-bs-parent="#navbarMobile"
                               >Nghiên cứu khoa học</a
                             >
+                            <div class="collapse" id="nghien-cuu-khoa-hoc">
+                              <div class="card card-body">
+                                <!-- Thêm nội dung nếu cần -->
+                              </div>
+                            </div>
                           </li>
                           <li class="nav-item">
                             <a
@@ -358,8 +347,14 @@
                               role="button"
                               aria-expanded="false"
                               aria-controls="hoat-dong"
+                              data-bs-parent="#navbarMobile"
                               >Hoạt động</a
                             >
+                            <div class="collapse" id="hoat-dong">
+                              <div class="card card-body">
+                                <!-- Thêm nội dung nếu cần -->
+                              </div>
+                            </div>
                           </li>
                         </ul>
                       </div>
@@ -1232,20 +1227,10 @@
       </section>
     </section>
   </body>
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-    crossorigin="anonymous"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-  ></script>
+  <script src="../js/jquery/jquery.js"></script>
+  <script src="../js/bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/slick/slick-1.8.1/slick/slick.min.js"></script>
   <script src="../js/slide.js"></script>
+  <script src="../js/nav-coselap.js"></script>
+</body>
 </html>
