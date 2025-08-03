@@ -39,7 +39,7 @@ p {
 
 .item {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  height: 22rem;
+  height: 23rem;
 }
 .item-dao-tao,
 .item-khoa-hoc {
@@ -256,6 +256,32 @@ p {
 .slider-dao-tao {
   width: 100%;
 }
+/* navbar  */
+.navbar-light .navbar-toggler {
+  /* border-color: white; */
+  border: none;
+}
+
+.topic-box {
+  /* background-color: #ef3d2f; 
+  color: white; */
+  padding: 1.5rem;
+  border-left: 8px solid black;
+  margin-bottom: 1rem;
+}
+.topic-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.topic-item {
+  margin-bottom: 0.5rem;
+}
+.highlight {
+  font-weight: bold;
+}
 /* responsive
  */
 /* Mobile: dưới 768px */
@@ -263,10 +289,12 @@ p {
   * {
     font-size: 16px;
   }
-  h1 {
+  h1,
+  .topic-title {
     font-size: 16px;
   }
-  h2 {
+  h2,
+  .topic-item {
     font-size: 10px;
   }
   h3 {
@@ -308,6 +336,16 @@ p {
   .slide-sinhvien.d-flex.align-items-center.position-relative {
     width: 80%;
   }
+  .logo-DHCL-mobile {
+    display: none;
+  }
+  .small-head.d-flex.container {
+    display: none !important;
+  }
+  .nav-bar {
+    z-index: 3;
+    background-color: #1f2251;
+  }
 }
 
 /* Tablet: từ 768px đến 991px */
@@ -315,10 +353,12 @@ p {
   * {
     font-size: 18px;
   }
-  h1 {
+  h1,
+  .topic-title {
     font-size: 20px;
   }
-  h3 {
+  h3,
+  .topic-item {
     font-size: 10px;
   }
   h4 {
@@ -349,11 +389,37 @@ p {
   .slide-sinhvien.d-flex.align-items-center.position-relative {
     width: 90%;
   }
+  .logo-DHCL-mobile {
+    display: block;
+  }
+  .small-head.d-flex.container {
+    display: none !important;
+  }
+  .nav-bar {
+    z-index: 3;
+  }
 }
 @media (min-width: 992px) {
   .img-date {
     top: 37%;
     left: 7%;
+  }
+  .logo-DHCL-mobile {
+    display: none;
+  }
+  li.nav-item {
+    position: relative;
+  }
+  div#gioi-thieu,
+  div#tuyen-sinh,
+  div#dao-tao,
+  div#khoa-vien,
+  div#khoa-hoc-cong-nghe,
+  div#hop-tac-qt,
+  div#nghien-cuu-khoa-hoc,
+  div#hoat-dong {
+    position: absolute;
+    width: 100vh;
   }
 }
 /* Desktop: từ 992px trở lên */
