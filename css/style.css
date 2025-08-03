@@ -29,7 +29,7 @@ p {
 .nav-bar {
   background-color: rgba(31, 34, 81, 0.5);
 }
-.navbar a {
+.navbar > a {
   text-decoration: none;
   color: white;
 }
@@ -204,7 +204,12 @@ p {
 .album-container .right img:nth-child(2) {
   width: calc(35% - 0.5rem);
 }
-
+#colap-item-level-3 .topic-box,
+#colap-item-level-3 .card {
+  border: none;
+  margin: 0;
+  padding: 0 0 0 3rem;
+}
 @media (max-width: 768px) {
   .album-container,
   .album-container:nth-child(2n + 1) {
