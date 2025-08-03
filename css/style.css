@@ -351,6 +351,9 @@ p {
     z-index: 3;
     background-color: #1f2251;
   }
+  .icon img.img-fluid {
+    width: 20px;
+  }
 }
 
 /* Tablet: từ 768px đến 991px */
@@ -374,6 +377,9 @@ p {
   }
   p {
     font-size: 10px;
+  }
+  a {
+    font-size: 8px;
   }
   .item {
     height: 16rem;
@@ -402,6 +408,13 @@ p {
   }
   .nav-bar {
     z-index: 3;
+  }
+  .icon img.img-fluid {
+    width: 20px;
+  }
+  #footer {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
   }
 }
 @media (min-width: 992px) {
