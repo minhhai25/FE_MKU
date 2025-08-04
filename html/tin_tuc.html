@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trang Tin Tức</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/globals.css" />
+
+    <!-- CSS Bootstrap (thư viện chung) -->
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../css/fontawesome/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/tin_tuc.css" />
+  </head>
+  <body>
+    <section id="tin-chinh">
+      <div class="container py-4">
+        <div class="row">
+          <!-- Nội dung chính -->
+          <div class="col-lg-8 col-md-12">
+            <p class="text-muted small">
+              Thời tiết | Chủ nhật, 30/06/2025, 14:57 (GMT+7)
+            </p>
+            <h2>Miền Bắc giữa tuần mưa, cuối tuần nắng nóng</h2>
+            <p>
+              Ngày đầu tháng Bảy, miền Bắc mưa giông do tác động của rãnh áp
+              thấp, đến cuối tuần trời hửng nắng và nhiệt độ tăng lên trên 35 độ
+              C.
+            </p>
+
+            <p>
+              Hai ngày qua, trong khi toàn bộ miền Bắc, miền Trung chịu mưa rào
+              rải rác thì miền Nam nắng nóng kéo dài...
+            </p>
+
+            <img
+              src="../images/banner-tin-tuc.png"
+              alt="Ảnh minh họa"
+              class="img-fluid my-3"
+            />
+            <p class="text-muted small">
+              Mưa do giông ở quận Sơn Trà (Đà Nẵng). Ảnh:
+              <span>Nguyễn Nam</span>
+            </p>
+
+            <p>
+              Theo dự báo từ cơ quan khí tượng, miền Bắc sẽ tiếp tục có mưa cho
+              đến giữa tuần, sau đó trời sẽ nắng trở lại...
+            </p>
+            <!-- Thêm nội dung bài viết tại đây -->
+          </div>
+
+          <!-- Sidebar phải -->
+          <div class="col-lg-4 col-md-12 mt-4 mt-lg-0">
+            <div class="sidebar-title"><a href="#"> Xem nhiều</a></div>
+
+            <div class="related-post">
+              <img src="../images/banner-tin-tuc.png" alt="Tin 1" />
+              <div class="related-post-title">
+                Cháy rừng lan rộng ở miền Trung<a href="#" class="ps-2"
+                  ><i class="fa-solid fa-message" style="color: #7e7f81"></i>
+                  <span>39</span></a
+                >
+              </div>
+            </div>
+
+            <div class="related-post">
+              <img src="../images/banner-tin-tuc.png" alt="Tin 2" />
+              <div class="related-post-title">
+                Lũ quét xảy ra ở vùng cao phía Bắc<a href="#" class="ps-2"
+                  ><i class="fa-solid fa-message" style="color: #7e7f81"></i>
+                  <span>39</span></a
+                >
+              </div>
+            </div>
+
+            <div class="related-post">
+              <img src="../images/banner-tin-tuc.png" alt="Tin 3" />
+              <div class="related-post-title">
+                Nắng nóng kỷ lục ở miền Trung<a href="#" class="ps-2"
+                  ><i class="fa-solid fa-message" style="color: #7e7f81"></i>
+                  <span>39</span></a
+                >
+              </div>
+            </div>
+
+            <div class="related-post">
+              <img src="../images/banner-tin-tuc.png" alt="Tin 4" />
+              <div class="related-post-title">
+                Miền Nam vào mùa mưa lớn<a href="#" class="ps-2"
+                  ><i class="fa-solid fa-message" style="color: #7e7f81"></i>
+                  <span>39</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="noi-dung-left">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+            <!-- Ý kiến -->
+            <div class="binh-luan">
+              <h5>
+                <strong>Ý kiến</strong> <span class="text-muted">(5)</span>
+              </h5>
+
+              <!-- Input -->
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  placeholder="Chia sẻ ý kiến của bạn"
+                ></textarea>
+              </div>
+
+              <!-- Tabs -->
+              <ul class="nav nav-tabs mb-3" id="commentTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    id="quan-tam-tab"
+                    data-bs-toggle="tab"
+                    href="#quan-tam"
+                    role="tab"
+                    >Quan tâm nhất</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="moi-nhat-tab"
+                    data-bs-toggle="tab"
+                    href="#moi-nhat"
+                    role="tab"
+                    >Mới nhất</a
+                  >
+                </li>
+              </ul>
+              <!-- Nội dung tab -->
+              <div class="tab-content" id="commentTabsContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="quan-tam"
+                  role="tabpanel"
+                  aria-labelledby="quan-tam-tab"
+                >
+                  <!-- Nội dung bình luận quan tâm nhất -->
+                  <div class="mb-4">
+                    <div id="quan-tam">
+                      <!-- Danh sách bình luận -->
+                      <div class="mb-4">
+                        <!-- Bình luận 1 -->
+                        <div class="d-flex mb-3">
+                          <div
+                            class="rounded-circle bg-secondary text-white text-center me-2"
+                            style="width: 40px; height: 40px; line-height: 40px"
+                          >
+                            <img
+                              src="../images/dao-tao-1.png"
+                              class="rounded-circle me-2 w-100 h-100 object-fit-cover"
+                              alt="avatar"
+                            />
+                          </div>
+                          <div>
+                            <strong>Duy Tuấn</strong> <br />
+                            <p class="mb-1">
+                              Nắng mưa là việc của trời <br />
+                              Chúng tôi thông báo tạm thời thế thôi... <br />
+                              Thuận chồng, thuận vợ, đêm hé vẫn vui!
+                            </p>
+                            <div class="small text-muted">
+                              <a href="#" class="me-2"
+                                ><i class="bi bi-hand-thumbs-up"></i>
+                                <i
+                                  class="fa-solid fa-thumbs-up"
+                                  style="color: #848a94"
+                                ></i>
+                                Thích <span class="text-danger">70</span></a
+                              >
+                              <a href="#" class="me-2">Trả lời</a>
+                              <span>12:37 3/8</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Bình luận 2 -->
+                        <div class="d-flex mb-3">
+                          <div
+                            class="rounded-circle bg-secondary text-white text-center me-2"
+                            style="width: 40px; height: 40px; line-height: 40px"
+                          >
+                            <img
+                              src="../images/dao-tao-1.png"
+                              class="rounded-circle me-2 w-100 h-100 object-fit-cover"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <strong>nathannam1993</strong> <br />
+                            <p class="mb-1">
+                              Còn Miền Nam thì vẫn nắng nóng từ đầu tới cuối
+                              tháng như mọi khi
+                            </p>
+                            <div class="small text-muted">
+                              <a href="#" class="me-2"
+                                ><i
+                                  class="fa-solid fa-thumbs-up"
+                                  style="color: #848a94"
+                                ></i>
+                                Thích <span class="text-danger">7</span></a
+                              >
+                              <a href="#" class="me-2">Trả lời</a>
+                              <span>16:38 3/8</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Bình luận 3 -->
+                        <div class="d-flex mb-2">
+                          <div
+                            class="rounded-circle bg-secondary text-white text-center me-2"
+                            style="width: 40px; height: 40px; line-height: 40px"
+                          >
+                            <img
+                              src="../images/dao-tao-1.png"
+                              class="rounded-circle me-2 w-100 h-100 object-fit-cover"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <strong>Lâm Huỳnh Thiên Tình</strong><br />
+                            <p class="mb-1">
+                              Miền Tây nóng tưởng chín người luôn 😥
+                            </p>
+                            <div class="small text-muted">
+                              <a href="#" class="me-2"
+                                ><i
+                                  class="fa-solid fa-thumbs-up"
+                                  style="color: #848a94"
+                                ></i>
+                                Thích <span class="text-danger">3</span></a
+                              >
+                              <a href="#" class="me-2">Trả lời</a>
+                              <span>17:04 3/8</span>
+                            </div>
+
+                            <!-- Trả lời con -->
+                            <div class="d-flex mt-3 ps-4 border-start">
+                              <div
+                                class="rounded-circle bg-secondary text-white text-center me-2"
+                                style="
+                                  width: 40px;
+                                  height: 40px;
+                                  line-height: 40px;
+                                "
+                              >
+                                <img
+                                  src="../images/dao-tao-1.png"
+                                  class="rounded-circle me-2 w-100 h-100 object-fit-cover"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div>
+                                <strong>Ngọc</strong><br />
+                                <p class="mb-1">😂 Cười xỉu ông nội này</p>
+                                <div class="small text-muted">
+                                  <a href="#" class="me-2"
+                                    ><i
+                                      class="fa-solid fa-thumbs-up"
+                                      style="color: #848a94"
+                                    ></i>
+                                    Thích</a
+                                  >
+                                  <a href="#" class="me-2">Trả lời</a>
+                                  <span>17:10 3/8</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="moi-nhat"
+                  role="tabpanel"
+                  aria-labelledby="moi-nhat-tab"
+                >
+                  <!-- Nội dung bình luận mới nhất -->
+                  <div class="mb-4">
+                    <!-- Bình luận 1 -->
+                    <div class="d-flex mb-3">
+                      <div
+                        class="rounded-circle bg-secondary text-white text-center me-2"
+                        style="width: 40px; height: 40px; line-height: 40px"
+                      >
+                        <img
+                          src="../images/dao-tao-1.png"
+                          class="rounded-circle me-2 w-100 h-100 object-fit-cover"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div>
+                        <strong>Duy Tuấn</strong> <br />
+                        <p class="mb-1">
+                          Nắng mưa là việc của trời <br />
+                          Chúng tôi thông báo tạm thời thế thôi... <br />
+                          Thuận chồng, thuận vợ, đêm hé vẫn vui!
+                        </p>
+                        <div class="small text-muted">
+                          <a href="#" class="me-2"
+                            ><i class="bi bi-hand-thumbs-up"></i>
+                            <i
+                              class="fa-solid fa-thumbs-up"
+                              style="color: #848a94"
+                            ></i>
+                            Thích <span class="text-danger">70</span></a
+                          >
+                          <a href="#" class="me-2">Trả lời</a>
+                          <span>12:37 3/8</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Bình luận 2 -->
+                    <div class="d-flex mb-3">
+                      <div
+                        class="rounded-circle bg-secondary text-white text-center me-2"
+                        style="width: 40px; height: 40px; line-height: 40px"
+                      >
+                        <img
+                          src="../images/dao-tao-1.png"
+                          class="rounded-circle me-2 w-100 h-100 object-fit-cover"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <strong>nathannam1993</strong> <br />
+                        <p class="mb-1">
+                          Còn Miền Nam thì vẫn nắng nóng từ đầu tới cuối tháng
+                          như mọi khi
+                        </p>
+                        <div class="small text-muted">
+                          <a href="#" class="me-2"
+                            ><i
+                              class="fa-solid fa-thumbs-up"
+                              style="color: #848a94"
+                            ></i>
+                            Thích <span class="text-danger">7</span></a
+                          >
+                          <a href="#" class="me-2">Trả lời</a>
+                          <span>16:38 3/8</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Bình luận 3 -->
+                    <div class="d-flex mb-2">
+                      <div
+                        class="rounded-circle bg-secondary text-white text-center me-2"
+                        style="width: 40px; height: 40px; line-height: 40px"
+                      >
+                        <img
+                          src="../images/dao-tao-1.png"
+                          class="rounded-circle me-2 w-100 h-100 object-fit-cover"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <strong>Lâm Huỳnh Thiên Tình</strong><br />
+                        <p class="mb-1">
+                          Miền Tây nóng tưởng chín người luôn 😥
+                        </p>
+                        <div class="small text-muted">
+                          <a href="#" class="me-2"
+                            ><i
+                              class="fa-solid fa-thumbs-up"
+                              style="color: #848a94"
+                            ></i>
+                            Thích <span class="text-danger">3</span></a
+                          >
+                          <a href="#" class="me-2">Trả lời</a>
+                          <span>17:04 3/8</span>
+                        </div>
+
+                        <!-- Trả lời con -->
+                        <div class="d-flex mt-3 ps-4 border-start">
+                          <div
+                            class="rounded-circle bg-secondary text-white text-center me-2"
+                            style="width: 40px; height: 40px; line-height: 40px"
+                          >
+                            <img
+                              src="../images/dao-tao-1.png"
+                              class="rounded-circle me-2 w-100 h-100 object-fit-cover"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <strong>Ngọc</strong><br />
+                            <p class="mb-1">😂 Cười xỉu ông nội này</p>
+                            <div class="small text-muted">
+                              <a href="#" class="me-2"
+                                ><i
+                                  class="fa-solid fa-thumbs-up"
+                                  style="color: #848a94"
+                                ></i>
+                                Thích</a
+                              >
+                              <a href="#" class="me-2">Trả lời</a>
+                              <span>17:10 3/8</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="thoi-su pb-3">
+              <h5 class="pb-2"><a href="#">Thời sự</a></h5>
+
+              <!-- Bài viết 1 -->
+              <div class="d-flex mb-4">
+                <img
+                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                  alt="Bộ Xây dựng"
+                  class="me-3"
+                  style="width: 160px; height: auto"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">
+                    <a href="#"
+                      >Bộ Xây dựng đặt mục tiêu đóng góp trên 20% GDP cả nước</a
+                    >
+                  </h6>
+                  <p class="mb-1 text-muted small text-ellipsis-3">
+                    Ngành xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào
+                    năm 2025... Ngành xây dựng phấn đấu đóng góp trực tiếp hơn
+                    18% GDP vào năm 2025... Ngành xây dựng phấn đấu đóng góp
+                    trực tiếp hơn 18% GDP vào năm 2025... Ngành xây dựng phấn
+                    đấu đóng góp trực tiếp hơn 18% GDP vào năm 2025... Ngành xây
+                    dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào năm 2025...
+                  </p>
+                  <p class="text-muted small">
+                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Bài viết 2 -->
+              <div class="d-flex mb-4">
+                <img
+                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                  alt="Phủ đào Thanh Hóa"
+                  class="me-3"
+                  style="width: 160px; height: auto"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">
+                    <a href="#">
+                      Thủ phủ đào phai ở Thanh Hóa chết khô sau mưa lũ
+                    </a>
+                  </h6>
+                  <p class="mb-1 text-muted small text-ellipsis-3">
+                    Sau đợt mưa lũ kéo dài do ảnh hưởng của bão Wipha...
+                  </p>
+                  <p class="text-muted small">
+                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Bài viết 3 -->
+              <div class="d-flex mb-4">
+                <img
+                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                  alt="Giúp khách Úc tìm kim cương"
+                  class="me-3"
+                  style="width: 160px; height: auto"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">
+                    <a href="#">
+                      Khen thưởng hai người giúp du khách Australia tìm lại nhẫn
+                      kim cương</a
+                    >
+                  </h6>
+                  <p class="mb-1 text-muted small text-ellipsis-3">
+                    ĐÀ NẴNG – Anh Phan Thanh Trinh và Phạm Nhữ Đông...
+                  </p>
+                  <p class="text-muted small">
+                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="danh-cho-ban pb-3">
+              <h5 class="pb-2"><a href="#">Dành cho bạn</a></h5>
+
+              <!-- Bài viết 1 -->
+              <div class="d-flex mb-4">
+                <img
+                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                  alt="Bộ Xây dựng"
+                  class="me-3"
+                  style="width: 160px; height: auto"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">
+                    <a href="#"
+                      >Bộ Xây dựng đặt mục tiêu đóng góp trên 20% GDP cả nước</a
+                    >
+                  </h6>
+                  <p class="mb-1 text-muted small text-ellipsis-3">
+                    Ngành xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào
+                    năm 2025...
+                  </p>
+                  <p class="text-muted small">
+                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Bài viết 2 -->
+              <div class="d-flex mb-4">
+                <img
+                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                  alt="Phủ đào Thanh Hóa"
+                  class="me-3"
+                  style="width: 160px; height: auto"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">
+                    <a href="#">
+                      Thủ phủ đào phai ở Thanh Hóa chết khô sau mưa lũ
+                    </a>
+                  </h6>
+                  <p class="mb-1 text-muted small text-ellipsis-3">
+                    Sau đợt mưa lũ kéo dài do ảnh hưởng của bão Wipha...
+                  </p>
+                  <p class="text-muted small">
+                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Bài viết 3 -->
+              <div class="d-flex mb-4">
+                <img
+                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                  alt="Giúp khách Úc tìm kim cương"
+                  class="me-3"
+                  style="width: 160px; height: auto"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">
+                    <a href="#">
+                      Khen thưởng hai người giúp du khách Australia tìm lại nhẫn
+                      kim cương</a
+                    >
+                  </h6>
+                  <p class="mb-1 text-muted small text-ellipsis-3">
+                    ĐÀ NẴNG – Anh Phan Thanh Trinh và Phạm Nhữ Đông...
+                  </p>
+                  <p class="text-muted small">
+                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tin-moi pb-3">
+              <h5 class="pb-2"><a href="#">Tin mới</a></h5>
+
+              <!-- Bài viết 1 -->
+              <div class="d-flex mb-4">
+                <img
+                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                  alt="Bộ Xây dựng"
+                  class="me-3"
+                  style="width: 160px; height: auto"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">
+                    <a href="#"
+                      >Bộ Xây dựng đặt mục tiêu đóng góp trên 20% GDP cả nước</a
+                    >
+                  </h6>
+                  <p class="mb-1 text-muted small text-ellipsis-3">
+                    Ngành xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào
+                    năm 2025...
+                  </p>
+                  <p class="text-muted small">
+                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Bài viết 2 -->
+              <div class="d-flex mb-4">
+                <img
+                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                  alt="Phủ đào Thanh Hóa"
+                  class="me-3"
+                  style="width: 160px; height: auto"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">
+                    <a href="#">
+                      Thủ phủ đào phai ở Thanh Hóa chết khô sau mưa lũ
+                    </a>
+                  </h6>
+                  <p class="mb-1 text-muted small text-ellipsis-3">
+                    Sau đợt mưa lũ kéo dài do ảnh hưởng của bão Wipha...
+                  </p>
+                  <p class="text-muted small">
+                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Bài viết 3 -->
+              <div class="d-flex mb-4">
+                <img
+                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                  alt="Giúp khách Úc tìm kim cương"
+                  class="me-3"
+                  style="width: 160px; height: auto"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">
+                    <a href="#">
+                      Khen thưởng hai người giúp du khách Australia tìm lại nhẫn
+                      kim cương</a
+                    >
+                  </h6>
+                  <p class="mb-1 text-muted small text-ellipsis-3">
+                    ĐÀ NẴNG – Anh Phan Thanh Trinh và Phạm Nhữ Đông...
+                  </p>
+                  <p class="text-muted small">
+                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                  </p>
+                </div>
+              </div>
+              <div class="button-tin-moi w-100">
+                <button
+                  type="button  "
+                  class="btn btn-outline-secondary w-100 py-3 fw-bold"
+                >
+                  Xem thêm tin mới
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-12">
+            <div class="border p-2 bg-white scrollable-content">
+              <!-- Các mục tin tức của bạn ở đây -->
+              <div class="d-flex mb-3 pb-3 border-bottom">
+                <div class="flex-grow-1 pe-2">
+                  <a
+                    href="#"
+                    class="text-dark fw-semibold text-decoration-none"
+                  >
+                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
+                    kê
+                  </a>
+                </div>
+                <div style="width: 80px; flex-shrink: 0">
+                  <img
+                    src="../images/banner-tin-tuc.png"
+                    alt="news"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="d-flex mb-3 pb-3 border-bottom">
+                <div class="flex-grow-1 pe-2">
+                  <a
+                    href="#"
+                    class="text-dark fw-semibold text-decoration-none"
+                  >
+                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
+                    kê
+                  </a>
+                </div>
+                <div style="width: 80px; flex-shrink: 0">
+                  <img
+                    src="../images/banner-tin-tuc.png"
+                    alt="news"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="d-flex mb-3 pb-3 border-bottom">
+                <div class="flex-grow-1 pe-2">
+                  <a
+                    href="#"
+                    class="text-dark fw-semibold text-decoration-none"
+                  >
+                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
+                    kê
+                  </a>
+                </div>
+                <div style="width: 80px; flex-shrink: 0">
+                  <img
+                    src="../images/banner-tin-tuc.png"
+                    alt="news"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="d-flex mb-3 pb-3 border-bottom">
+                <div class="flex-grow-1 pe-2">
+                  <a
+                    href="#"
+                    class="text-dark fw-semibold text-decoration-none"
+                  >
+                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
+                    kê
+                  </a>
+                </div>
+                <div style="width: 80px; flex-shrink: 0">
+                  <img
+                    src="../images/banner-tin-tuc.png"
+                    alt="news"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="d-flex mb-3 pb-3 border-bottom">
+                <div class="flex-grow-1 pe-2">
+                  <a
+                    href="#"
+                    class="text-dark fw-semibold text-decoration-none"
+                  >
+                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
+                    kê
+                  </a>
+                </div>
+                <div style="width: 80px; flex-shrink: 0">
+                  <img
+                    src="../images/banner-tin-tuc.png"
+                    alt="news"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="d-flex mb-3 pb-3 border-bottom">
+                <div class="flex-grow-1 pe-2">
+                  <a
+                    href="#"
+                    class="text-dark fw-semibold text-decoration-none"
+                  >
+                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
+                    kê
+                  </a>
+                </div>
+                <div style="width: 80px; flex-shrink: 0">
+                  <img
+                    src="../images/banner-tin-tuc.png"
+                    alt="news"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="d-flex mb-3 pb-3 border-bottom">
+                <div class="flex-grow-1 pe-2">
+                  <a
+                    href="#"
+                    class="text-dark fw-semibold text-decoration-none"
+                  >
+                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
+                    kê
+                  </a>
+                </div>
+                <div style="width: 80px; flex-shrink: 0">
+                  <img
+                    src="../images/banner-tin-tuc.png"
+                    alt="news"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/jquery/jquery.js"></script>
+    <script src="../js/bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
