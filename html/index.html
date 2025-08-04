@@ -91,12 +91,12 @@
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                       >
-                        <span class="navbar-toggler-icon"></span>
+                        <span class=""> <i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
                       </button>
 
                       <!-- Collapsible nav items -->
-                      <div class="collapse navbar-collapse" id="navbarMobile">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="navbarMobile">
+                        <ul class="navbar-nav  mb-2 mb-lg-0">
                           <li class="nav-item">
                             <a class="nav-link text-white" href="#"
                               >Trang chủ</a
@@ -132,8 +132,15 @@
                                         
                                           <div class="topic-item">
                                             <i class="fa-solid fa-caret-right"></i>
-                                            <a href="#">Lập trình web với HTML5 - CSS3 - JQuery -
-                                            Bootstrap - Ajax – [36 giờ]</a>
+                                            <a href="#">Lập trình web với HTML5 (level 3)</a>
+                                          </div>
+                                          <div class="topic-item">
+                                            <i class="fa-solid fa-caret-right"></i>
+                                            <a href="#">Lập trình web với HTML5 (level 3)</a>
+                                          </div>
+                                          <div class="topic-item">
+                                            <i class="fa-solid fa-caret-right"></i>
+                                            <a href="#">Lập trình web với HTML5 (level 3)</a>
                                           </div>
                                         </div>
                                       </div>
@@ -432,7 +439,7 @@
             </div>
           </div>
           <div class="row my-0 my-md-3">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
               <div class="item">
                 <div class="img">
                   <img
@@ -451,7 +458,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
               <div class="item">
                 <div class="img">
                   <img
@@ -470,7 +477,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
               <div class="item">
                 <div class="img">
                   <img
@@ -490,7 +497,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
               <div class="item">
                 <div class="img">
                   <img
@@ -555,7 +562,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
               <div class="item position-relative">
                 <div class="img h-60">
                   <img
@@ -581,7 +588,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
               <div class="item position-relative">
                 <div class="img h-60">
                   <img
@@ -607,7 +614,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
               <div class="item position-relative">
                 <div class="img h-60">
                   <img
@@ -633,7 +640,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
               <div class="item position-relative">
                 <div class="img h-60">
                   <img
@@ -683,56 +690,52 @@
           </div>
 
           <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
-              <div class="item-khoa-hoc">
-                <div class="img h-60">
-                  <img
-                    src="../images/kh-cn-1.png"
-                    alt=""
-                    class="img-fluid w-100"
-                  />
-                </div>
-                <h3 class="text-center text-uppercase h-40">
-                  Tạp chí khoa học
-                </h3>
+           <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
+            <div class="item-khoa-hoc h-100 d-flex flex-column">
+              <div class="img flex-grow-1">
+                <img src="../images/kh-cn-1.png" alt="" class="img-fluid w-100 h-100 object-fit-cover">
               </div>
+              <h3 class="text-center text-uppercase py-4 mb-0">
+                Tạp chí khoa học
+              </h3>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
-              <div class="item-khoa-hoc">
-                <div class="img h-60">
+          </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
+              <div class="item-khoa-hoc h-100 d-flex flex-column">
+                <div class="img flex-grow-1">
                   <img
                     src="../images/kh-cn-2.png"
                     alt=""
-                    class="img-fluid w-100"
+                    class="img-fluid w-100 h-100 object-fit-cover"
                   />
                 </div>
-                <h3 class="text-center text-uppercase h-40">
+                <h3 class="text-center text-uppercase py-4 mb-0">
                   chuyển giao công nghệ
                 </h3>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
-              <div class="item-khoa-hoc">
-                <div class="img h-60">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
+              <div class="item-khoa-hoc h-100 d-flex flex-column">
+                <div class="img flex-grow-1">
                   <img
                     src="../images/kh-cn-3.png"
                     alt=""
-                    class="img-fluid w-100"
+                    class="img-fluid w-100 h-100 object-fit-cover"
                   />
                 </div>
-                <h3 class="text-center text-uppercase h-40">nhà máy nước</h3>
+                <h3 class="text-center text-uppercase py-4 mb-0">nhà máy nước</h3>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
-              <div class="item-khoa-hoc">
-                <div class="img h-60">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
+              <div class="item-khoa-hoc h-100 d-flex flex-column">
+                <div class="img flex-grow-1">
                   <img
                     src="../images/kh-cn-4.png"
                     alt=""
-                    class="img-fluid w-100"
+                    class="img-fluid w-100 h-100 object-fit-cover"
                   />
                 </div>
-                <h3 class="text-center text-uppercase h-40">
+                <h3 class="text-center text-uppercase py-4 mb-0">
                   nhà máy điên mặt trời
                 </h3>
               </div>
@@ -938,7 +941,7 @@
             </p>
           </div>
           <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
               <div class="item">
                 <div class="img h-60">
                   <img
@@ -956,7 +959,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
               <div class="item">
                 <div class="img h-60">
                   <img
@@ -974,7 +977,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
               <div class="item">
                 <div class="img h-60">
                   <img
@@ -992,7 +995,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-2">
               <div class="item">
                 <div class="img h-60">
                   <img
@@ -1109,7 +1112,7 @@
                   <img src="../images/circle-left-solid.png" alt="" />
                 </button>
 
-                <div class="slider w-100">
+                <div class="slider">
                   <div class="album-container">
                     <div class="left">
                       <img src="../images/hdsv1.png" alt="Hình lớn bên trái" />

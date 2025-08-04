@@ -144,7 +144,10 @@ p {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
+.item-khoa-hoc h3,
+.item-dao-tao h3 {
+  font-size: 20px;
+}
 #hop-tac-qt a,
 .title a {
   text-decoration: none;
@@ -210,6 +213,13 @@ p {
   margin: 0;
   padding: 0 0 0 3rem;
 }
+.slider,
+.slider-dao-tao {
+  width: 95%;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0);
+}
 @media (max-width: 768px) {
   .album-container,
   .album-container:nth-child(2n + 1) {
@@ -255,12 +265,12 @@ p {
   height: 2rem;
 }
 
-.slider {
+/* .slider {
   width: 100%;
-}
-.slider-dao-tao {
+} */
+/* .slider-dao-tao {
   width: 100%;
-}
+} */
 /* navbar  */
 .navbar-light .navbar-toggler {
   /* border-color: white; */
@@ -309,7 +319,7 @@ p {
     font-size: 8px;
   }
   h4 {
-    font-size: 10px;
+    font-size: 9px;
   }
   h5 {
     font-size: 8px;
@@ -317,8 +327,9 @@ p {
   p {
     font-size: 8px;
   }
-  .section-header {
-    margin-bottom: 0.5rem !important;
+  .section-header,
+  h1 {
+    margin-bottom: 0 !important;
   }
   .noi-dung {
     padding-top: 0.5rem;
@@ -330,7 +341,7 @@ p {
     height: 22rem;
   }
   .section-footer {
-    margin-top: 0.5rem;
+    margin-top: 0.5rem !important;
   }
   .item-khoa-hoc {
     height: 19rem !important;
@@ -359,6 +370,24 @@ p {
   .icon img.img-fluid {
     width: 20px;
   }
+  .topic-box {
+    padding: 0.5rem;
+    border-left: 3px solid black;
+    margin-bottom: 0.5rem;
+  }
+  .card-body {
+    padding: 0.5rem;
+  }
+  .topic-title {
+    margin-bottom: 0.5rem;
+  }
+  #colap-item-level-3 .card {
+    padding: 0;
+  }
+  .item-khoa-hoc h3,
+  .item-dao-tao h3 {
+    font-size: 15px;
+  }
 }
 
 /* Tablet: từ 768px đến 991px */
@@ -366,8 +395,11 @@ p {
   * {
     font-size: 18px;
   }
-  h1,
-  .topic-title {
+  .item-khoa-hoc h3,
+  .item-dao-tao h3 {
+    font-size: 13px;
+  }
+  h1 {
     font-size: 20px;
   }
   h3,
@@ -387,7 +419,7 @@ p {
     font-size: 8px;
   }
   .item {
-    height: 16rem;
+    height: 20rem;
   }
   .item-khoa-hoc {
     height: 16rem;
@@ -421,10 +453,25 @@ p {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;
   }
+  .topic-box {
+    padding: 0.5rem;
+    border-left: 3px solid black;
+    margin-bottom: 0.5rem;
+  }
+  .card-body {
+    padding: 0.5rem;
+  }
+  .topic-title {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+  }
+  #colap-item-level-3 .card {
+    padding: 0;
+  }
 }
 @media (min-width: 992px) {
   .img-date {
-    top: 37%;
+    top: 55%;
     left: 7%;
   }
   .logo-DHCL-mobile {
