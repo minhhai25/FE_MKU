@@ -69,3 +69,31 @@ $(document).ready(function () {
     $(".slider").slick("slickNext");
   });
 });
+
+//slide tin tức
+$(document).ready(function () {
+  $(".slider-tin-khac").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  $(".btn-prev").click(function () {
+    $(".slider-tin-khac").slick("slickPrev");
+  });
+
+  $(".btn-next").click(function () {
+    $(".slider-tin-khac").slick("slickNext");
+  });
+});

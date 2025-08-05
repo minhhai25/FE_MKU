@@ -493,7 +493,3 @@ p {
   }
 }
 /* Desktop: từ 992px trở lên */
-@media (min-width: 992px) {
-  * {
-  }
-}

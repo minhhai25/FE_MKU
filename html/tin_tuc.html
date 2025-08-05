@@ -4,21 +4,467 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Trang Tin Tức</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="../css/globals.css" />
 
     <!-- CSS Bootstrap (thư viện chung) -->
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" />
+
+    <!-- CSS Slick Carousel (thư viện slider) -->
+    <link rel="stylesheet" type="text/css" href="../css/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/slick/slick-theme.css"
+    />
+
+    <!-- CSS Font Awesome (icon) -->
     <link
       rel="stylesheet"
       href="../css/fontawesome/fontawesome-free-6.7.2-web/css/all.min.css"
     />
+
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/tin_tuc.css" />
   </head>
   <body>
+    <div class="header">
+      <div class="small-head d-flex container">
+        <div class="row w-100 align-items-center">
+          <div class="col-4 d-flex align-items-center">
+            <img class="logo-DHCL me-2" src="../images/logo-truong.png" />
+            <p class="title-truong text-center">
+              <span class="span">TRƯỜNG ĐẠI HỌC CỬU LONG<br /></span>
+              <span class="text-wrapper-2"
+                >Toàn diện – Sáng tạo – Hội nhập – Phát triển</span
+              >
+            </p>
+          </div>
+          <div class="col-8 d-flex justify-content-between">
+            <p class="element">
+              <img
+                class="vector me-2"
+                src="https://c.animaapp.com/mdrent4ttKlpku/img/vector.svg"
+              />02703832538
+            </p>
+
+            <p class="element">
+              <img
+                class="envelope-solid me-2"
+                src="../images/envelope-solid.png"
+              />cuulonguniversity@mku.edu.vn
+            </p>
+
+            <p class="element">
+              <img
+                class="hand-point-up-solid me-2"
+                src="../images/hand-point-up-solid.png"
+              />Tuyển sinh: Thông báo tuyển sinh Đại học hệ chính quy
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="silder-banner">
+        <div class="overlap-2">
+          <div class="mask-group">
+            <div class="overlap-group-2 w-100 position-relative">
+              <img
+                class="IMG img-fluid w-100"
+                src="../images/Silder-banner1.png"
+              />
+              <div class="nav-bar position-absolute top-0 z-index-1 w-100">
+                <nav
+                  class="navbar navbar-expand-lg navbar-light text-white container"
+                >
+                  <div class="container-fluid text-white fw-bold w-100">
+                    <!-- Brand hoặc logo -->
+                    <img
+                      class="logo-DHCL-mobile"
+                      src="../images/logo-truong.png"
+                    />
+
+                    <!-- Toggle button -->
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarMobile"
+                      aria-controls="navbarMobile"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="">
+                        <i class="fa-solid fa-bars" style="color: #ffffff"></i
+                      ></span>
+                    </button>
+
+                    <!-- Collapsible nav items -->
+                    <div
+                      class="collapse navbar-collapse d-lg-flex justify-content-between"
+                      id="navbarMobile"
+                    >
+                      <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link text-white"
+                            data-bs-toggle="collapse"
+                            href="#gioi-thieu"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="gioi-thieu"
+                            data-bs-parent="#navbarMobile"
+                            >Giới thiệu</a
+                          >
+                          <div class="collapse" id="gioi-thieu">
+                            <div class="card card-body">
+                              <div class="topic-box">
+                                <div class="topic-title">
+                                  <a>Chuyên đề WEB - PHP</a>
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a
+                                    href="#colap-item-level-3"
+                                    data-bs-toggle="collapse"
+                                    role="button"
+                                    aria-expanded="false"
+                                    aria-controls="colap-item-level-3"
+                                    data-bs-parent="#navbarMobile"
+                                    >Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                  <div class="collapse" id="colap-item-level-3">
+                                    <div class="card card-body">
+                                      <div class="topic-box">
+                                        <div class="topic-item">
+                                          <i
+                                            class="fa-solid fa-caret-right"
+                                          ></i>
+                                          <a href="#"
+                                            >Lập trình web với HTML5 (level
+                                            3)</a
+                                          >
+                                        </div>
+                                        <div class="topic-item">
+                                          <i
+                                            class="fa-solid fa-caret-right"
+                                          ></i>
+                                          <a href="#"
+                                            >Lập trình web với HTML5 (level
+                                            3)</a
+                                          >
+                                        </div>
+                                        <div class="topic-item">
+                                          <i
+                                            class="fa-solid fa-caret-right"
+                                          ></i>
+                                          <a href="#"
+                                            >Lập trình web với HTML5 (level
+                                            3)</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web frontend - reactjs – [75
+                                    giờ]</a
+                                  >
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với mã nguồn mở PHP&MYSQL -
+                                    PHP FRAMEWORK [126 giờ]</a
+                                  >
+                                </div>
+                              </div>
+                              <div class="topic-box">
+                                <div class="topic-title">Chuyên đề Mobile</div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình Games/Apps trên nền tảng Android –
+                                    [120 giờ]</a
+                                  >
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình Games/Apps trên nền tảng IOS –
+                                    [120 giờ]</a
+                                  >
+                                </div>
+                              </div>
+                              <div class="topic-box">
+                                <div class="topic-title">Chuyên đề JAVA</div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Ngôn ngữ lập trình hướng đối tượng với java
+                                    – [40 giờ]</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link text-white"
+                            data-bs-toggle="collapse"
+                            href="#tuyen-sinh"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="tuyen-sinh"
+                            data-bs-parent="#navbarMobile"
+                            >Tuyển sinh</a
+                          >
+                          <div class="collapse" id="tuyen-sinh">
+                            <div class="card card-body">
+                              <div class="topic-box">
+                                <div class="topic-title">
+                                  Chuyên đề WEB - PHP
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                </div>
+                              </div>
+                              <div class="topic-box">
+                                <div class="topic-title">Chuyên đề Mobile</div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                </div>
+                              </div>
+                              <div class="topic-box">
+                                <div class="topic-title">Chuyên đề JAVA</div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link text-white"
+                            data-bs-toggle="collapse"
+                            href="#dao-tao"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="dao-tao"
+                            data-bs-parent="#navbarMobile"
+                            >Đào tạo</a
+                          >
+                          <div class="collapse" id="dao-tao">
+                            <div class="card card-body">
+                              <div class="topic-box">
+                                <div class="topic-title">
+                                  Chuyên đề WEB - PHP
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link text-white"
+                            data-bs-toggle="collapse"
+                            href="#khoa-vien"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="khoa-vien"
+                            data-bs-parent="#navbarMobile"
+                            >Các Khoa - Viện</a
+                          >
+                          <div class="collapse" id="khoa-vien">
+                            <div class="card card-body">
+                              <div class="topic-box">
+                                <div class="topic-title">
+                                  Chuyên đề WEB - PHP
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                </div>
+                                <div class="topic-item">
+                                  <i class="fa-solid fa-caret-right"></i>
+                                  <a href="#">
+                                    Lập trình web với HTML5 - CSS3 - JQuery -
+                                    Bootstrap - Ajax – [36 giờ]</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link text-white"
+                            data-bs-toggle="collapse"
+                            href="#khoa-hoc-cong-nghe"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="khoa-hoc-cong-nghe"
+                            data-bs-parent="#navbarMobile"
+                            >Khoa học công nghệ</a
+                          >
+                          <div class="collapse" id="khoa-hoc-cong-nghe">
+                            <div class="card card-body">
+                              <!-- Thêm nội dung nếu cần -->
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link text-white"
+                            data-bs-toggle="collapse"
+                            href="#hop-tac-qt"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="hop-tac-qt"
+                            data-bs-parent="#navbarMobile"
+                            >Hợp tác quốc tế</a
+                          >
+                          <div class="collapse" id="hop-tac-qt">
+                            <div class="card card-body">
+                              <!-- Thêm nội dung nếu cần -->
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link text-white"
+                            data-bs-toggle="collapse"
+                            href="#nghien-cuu-khoa-hoc"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="nghien-cuu-khoa-hoc"
+                            data-bs-parent="#navbarMobile"
+                            >Nghiên cứu khoa học</a
+                          >
+                          <div class="collapse" id="nghien-cuu-khoa-hoc">
+                            <div class="card card-body">
+                              <!-- Thêm nội dung nếu cần -->
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link text-white"
+                            data-bs-toggle="collapse"
+                            href="#hoat-dong"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="hoat-dong"
+                            data-bs-parent="#navbarMobile"
+                            >Hoạt động</a
+                          >
+                          <div class="collapse" id="hoat-dong">
+                            <div class="card card-body">
+                              <!-- Thêm nội dung nếu cần -->
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+
+              <div
+                class="banner-bottom position-absolute start-50 bottom-0 translate-middle text-center"
+              >
+                <p class="text-wrapper text-white bold">
+                  Chào mừng đến với Trường Đại Học Cửu Long
+                </p>
+                <div class="btn">
+                  <a href="#">
+                    <img
+                      class="circle-down-solid"
+                      src="../images/circle-down-solid.png"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <img
+                class="rectangle-2"
+                src="https://c.animaapp.com/mdrent4ttKlpku/img/rectangle-29.png"
+              /> -->
+        </div>
+      </div>
+    </div>
     <section id="tin-chinh">
       <div class="container py-4">
         <div class="row">
@@ -103,703 +549,325 @@
         </div>
       </div>
     </section>
-    <section id="noi-dung-left">
-      <div class="container py-4">
-        <div class="row">
-          <div class="col-lg-8 col-md-12">
-            <!-- Ý kiến -->
-            <div class="binh-luan">
-              <h5>
-                <strong>Ý kiến</strong> <span class="text-muted">(5)</span>
-              </h5>
-
-              <!-- Input -->
-              <div class="mb-3">
-                <textarea
-                  class="form-control"
-                  rows="3"
-                  placeholder="Chia sẻ ý kiến của bạn"
-                ></textarea>
-              </div>
-
-              <!-- Tabs -->
-              <ul class="nav nav-tabs mb-3" id="commentTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <a
-                    class="nav-link active"
-                    id="quan-tam-tab"
-                    data-bs-toggle="tab"
-                    href="#quan-tam"
-                    role="tab"
-                    >Quan tâm nhất</a
-                  >
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a
-                    class="nav-link"
-                    id="moi-nhat-tab"
-                    data-bs-toggle="tab"
-                    href="#moi-nhat"
-                    role="tab"
-                    >Mới nhất</a
-                  >
-                </li>
-              </ul>
-              <!-- Nội dung tab -->
-              <div class="tab-content" id="commentTabsContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="quan-tam"
-                  role="tabpanel"
-                  aria-labelledby="quan-tam-tab"
-                >
-                  <!-- Nội dung bình luận quan tâm nhất -->
-                  <div class="mb-4">
-                    <div id="quan-tam">
-                      <!-- Danh sách bình luận -->
-                      <div class="mb-4">
-                        <!-- Bình luận 1 -->
-                        <div class="d-flex mb-3">
-                          <div
-                            class="rounded-circle bg-secondary text-white text-center me-2"
-                            style="width: 40px; height: 40px; line-height: 40px"
-                          >
-                            <img
-                              src="../images/dao-tao-1.png"
-                              class="rounded-circle me-2 w-100 h-100 object-fit-cover"
-                              alt="avatar"
-                            />
-                          </div>
-                          <div>
-                            <strong>Duy Tuấn</strong> <br />
-                            <p class="mb-1">
-                              Nắng mưa là việc của trời <br />
-                              Chúng tôi thông báo tạm thời thế thôi... <br />
-                              Thuận chồng, thuận vợ, đêm hé vẫn vui!
-                            </p>
-                            <div class="small text-muted">
-                              <a href="#" class="me-2"
-                                ><i class="bi bi-hand-thumbs-up"></i>
-                                <i
-                                  class="fa-solid fa-thumbs-up"
-                                  style="color: #848a94"
-                                ></i>
-                                Thích <span class="text-danger">70</span></a
-                              >
-                              <a href="#" class="me-2">Trả lời</a>
-                              <span>12:37 3/8</span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Bình luận 2 -->
-                        <div class="d-flex mb-3">
-                          <div
-                            class="rounded-circle bg-secondary text-white text-center me-2"
-                            style="width: 40px; height: 40px; line-height: 40px"
-                          >
-                            <img
-                              src="../images/dao-tao-1.png"
-                              class="rounded-circle me-2 w-100 h-100 object-fit-cover"
-                              alt=""
-                            />
-                          </div>
-                          <div>
-                            <strong>nathannam1993</strong> <br />
-                            <p class="mb-1">
-                              Còn Miền Nam thì vẫn nắng nóng từ đầu tới cuối
-                              tháng như mọi khi
-                            </p>
-                            <div class="small text-muted">
-                              <a href="#" class="me-2"
-                                ><i
-                                  class="fa-solid fa-thumbs-up"
-                                  style="color: #848a94"
-                                ></i>
-                                Thích <span class="text-danger">7</span></a
-                              >
-                              <a href="#" class="me-2">Trả lời</a>
-                              <span>16:38 3/8</span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Bình luận 3 -->
-                        <div class="d-flex mb-2">
-                          <div
-                            class="rounded-circle bg-secondary text-white text-center me-2"
-                            style="width: 40px; height: 40px; line-height: 40px"
-                          >
-                            <img
-                              src="../images/dao-tao-1.png"
-                              class="rounded-circle me-2 w-100 h-100 object-fit-cover"
-                              alt=""
-                            />
-                          </div>
-                          <div>
-                            <strong>Lâm Huỳnh Thiên Tình</strong><br />
-                            <p class="mb-1">
-                              Miền Tây nóng tưởng chín người luôn 😥
-                            </p>
-                            <div class="small text-muted">
-                              <a href="#" class="me-2"
-                                ><i
-                                  class="fa-solid fa-thumbs-up"
-                                  style="color: #848a94"
-                                ></i>
-                                Thích <span class="text-danger">3</span></a
-                              >
-                              <a href="#" class="me-2">Trả lời</a>
-                              <span>17:04 3/8</span>
-                            </div>
-
-                            <!-- Trả lời con -->
-                            <div class="d-flex mt-3 ps-4 border-start">
-                              <div
-                                class="rounded-circle bg-secondary text-white text-center me-2"
-                                style="
-                                  width: 40px;
-                                  height: 40px;
-                                  line-height: 40px;
-                                "
-                              >
-                                <img
-                                  src="../images/dao-tao-1.png"
-                                  class="rounded-circle me-2 w-100 h-100 object-fit-cover"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div>
-                                <strong>Ngọc</strong><br />
-                                <p class="mb-1">😂 Cười xỉu ông nội này</p>
-                                <div class="small text-muted">
-                                  <a href="#" class="me-2"
-                                    ><i
-                                      class="fa-solid fa-thumbs-up"
-                                      style="color: #848a94"
-                                    ></i>
-                                    Thích</a
-                                  >
-                                  <a href="#" class="me-2">Trả lời</a>
-                                  <span>17:10 3/8</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+    <section id="tin-lien-quan">
+      <div class="container">
+        <div class="d-flex justify-content-around">
+          <button class="btn-prev me-2">
+            <img src="../images/circle-left-solid.png" alt="" />
+          </button>
+          <div class="slider-tin-khac">
+            <div
+              class="item-slide col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0"
+            >
+              <div class="border-0 px-2">
+                <div class="d-flex mb-4">
+                  <div class="img">
+                    <img
+                      src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                      alt="Bộ Xây dựng"
+                      class="me-3 img-fluid"
+                    />
                   </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="moi-nhat"
-                  role="tabpanel"
-                  aria-labelledby="moi-nhat-tab"
-                >
-                  <!-- Nội dung bình luận mới nhất -->
-                  <div class="mb-4">
-                    <!-- Bình luận 1 -->
-                    <div class="d-flex mb-3">
-                      <div
-                        class="rounded-circle bg-secondary text-white text-center me-2"
-                        style="width: 40px; height: 40px; line-height: 40px"
+                  <div class="align-items-center nd-slide">
+                    <h6 class="fw-bold mb-1">
+                      <a href="#"
+                        >Bộ Xây dựng đặt mục tiêu đóng góp trên 20% GDP cả
+                        nước</a
                       >
-                        <img
-                          src="../images/dao-tao-1.png"
-                          class="rounded-circle me-2 w-100 h-100 object-fit-cover"
-                          alt="avatar"
-                        />
-                      </div>
-                      <div>
-                        <strong>Duy Tuấn</strong> <br />
-                        <p class="mb-1">
-                          Nắng mưa là việc của trời <br />
-                          Chúng tôi thông báo tạm thời thế thôi... <br />
-                          Thuận chồng, thuận vợ, đêm hé vẫn vui!
-                        </p>
-                        <div class="small text-muted">
-                          <a href="#" class="me-2"
-                            ><i class="bi bi-hand-thumbs-up"></i>
-                            <i
-                              class="fa-solid fa-thumbs-up"
-                              style="color: #848a94"
-                            ></i>
-                            Thích <span class="text-danger">70</span></a
-                          >
-                          <a href="#" class="me-2">Trả lời</a>
-                          <span>12:37 3/8</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Bình luận 2 -->
-                    <div class="d-flex mb-3">
-                      <div
-                        class="rounded-circle bg-secondary text-white text-center me-2"
-                        style="width: 40px; height: 40px; line-height: 40px"
-                      >
-                        <img
-                          src="../images/dao-tao-1.png"
-                          class="rounded-circle me-2 w-100 h-100 object-fit-cover"
-                          alt=""
-                        />
-                      </div>
-                      <div>
-                        <strong>nathannam1993</strong> <br />
-                        <p class="mb-1">
-                          Còn Miền Nam thì vẫn nắng nóng từ đầu tới cuối tháng
-                          như mọi khi
-                        </p>
-                        <div class="small text-muted">
-                          <a href="#" class="me-2"
-                            ><i
-                              class="fa-solid fa-thumbs-up"
-                              style="color: #848a94"
-                            ></i>
-                            Thích <span class="text-danger">7</span></a
-                          >
-                          <a href="#" class="me-2">Trả lời</a>
-                          <span>16:38 3/8</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Bình luận 3 -->
-                    <div class="d-flex mb-2">
-                      <div
-                        class="rounded-circle bg-secondary text-white text-center me-2"
-                        style="width: 40px; height: 40px; line-height: 40px"
-                      >
-                        <img
-                          src="../images/dao-tao-1.png"
-                          class="rounded-circle me-2 w-100 h-100 object-fit-cover"
-                          alt=""
-                        />
-                      </div>
-                      <div>
-                        <strong>Lâm Huỳnh Thiên Tình</strong><br />
-                        <p class="mb-1">
-                          Miền Tây nóng tưởng chín người luôn 😥
-                        </p>
-                        <div class="small text-muted">
-                          <a href="#" class="me-2"
-                            ><i
-                              class="fa-solid fa-thumbs-up"
-                              style="color: #848a94"
-                            ></i>
-                            Thích <span class="text-danger">3</span></a
-                          >
-                          <a href="#" class="me-2">Trả lời</a>
-                          <span>17:04 3/8</span>
-                        </div>
-
-                        <!-- Trả lời con -->
-                        <div class="d-flex mt-3 ps-4 border-start">
-                          <div
-                            class="rounded-circle bg-secondary text-white text-center me-2"
-                            style="width: 40px; height: 40px; line-height: 40px"
-                          >
-                            <img
-                              src="../images/dao-tao-1.png"
-                              class="rounded-circle me-2 w-100 h-100 object-fit-cover"
-                              alt=""
-                            />
-                          </div>
-                          <div>
-                            <strong>Ngọc</strong><br />
-                            <p class="mb-1">😂 Cười xỉu ông nội này</p>
-                            <div class="small text-muted">
-                              <a href="#" class="me-2"
-                                ><i
-                                  class="fa-solid fa-thumbs-up"
-                                  style="color: #848a94"
-                                ></i>
-                                Thích</a
-                              >
-                              <a href="#" class="me-2">Trả lời</a>
-                              <span>17:10 3/8</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    </h6>
+                    <p class="mb-1 text-muted small text-ellipsis-3">
+                      Ngành xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào
+                      năm 2025... Ngành xây dựng phấn đấu đóng góp trực tiếp hơn
+                      18% GDP vào năm 2025... Ngành xây dựng phấn đấu đóng góp
+                      trực tiếp hơn 18% GDP vào năm 2025... Ngành xây dựng phấn
+                      đấu đóng góp trực tiếp hơn 18% GDP vào năm 2025... Ngành
+                      xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào năm
+                      2025...
+                    </p>
+                    <p class="text-muted small">
+                      2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="thoi-su pb-3">
-              <h5 class="pb-2"><a href="#">Thời sự</a></h5>
-
-              <!-- Bài viết 1 -->
-              <div class="d-flex mb-4">
-                <img
-                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
-                  alt="Bộ Xây dựng"
-                  class="me-3"
-                  style="width: 160px; height: auto"
-                />
-                <div>
-                  <h6 class="fw-bold mb-1">
-                    <a href="#"
-                      >Bộ Xây dựng đặt mục tiêu đóng góp trên 20% GDP cả nước</a
-                    >
-                  </h6>
-                  <p class="mb-1 text-muted small text-ellipsis-3">
-                    Ngành xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào
-                    năm 2025... Ngành xây dựng phấn đấu đóng góp trực tiếp hơn
-                    18% GDP vào năm 2025... Ngành xây dựng phấn đấu đóng góp
-                    trực tiếp hơn 18% GDP vào năm 2025... Ngành xây dựng phấn
-                    đấu đóng góp trực tiếp hơn 18% GDP vào năm 2025... Ngành xây
-                    dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào năm 2025...
-                  </p>
-                  <p class="text-muted small">
-                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
-                  </p>
-                </div>
-              </div>
-
-              <!-- Bài viết 2 -->
-              <div class="d-flex mb-4">
-                <img
-                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
-                  alt="Phủ đào Thanh Hóa"
-                  class="me-3"
-                  style="width: 160px; height: auto"
-                />
-                <div>
-                  <h6 class="fw-bold mb-1">
-                    <a href="#">
-                      Thủ phủ đào phai ở Thanh Hóa chết khô sau mưa lũ
-                    </a>
-                  </h6>
-                  <p class="mb-1 text-muted small text-ellipsis-3">
-                    Sau đợt mưa lũ kéo dài do ảnh hưởng của bão Wipha...
-                  </p>
-                  <p class="text-muted small">
-                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
-                  </p>
-                </div>
-              </div>
-
-              <!-- Bài viết 3 -->
-              <div class="d-flex mb-4">
-                <img
-                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
-                  alt="Giúp khách Úc tìm kim cương"
-                  class="me-3"
-                  style="width: 160px; height: auto"
-                />
-                <div>
-                  <h6 class="fw-bold mb-1">
-                    <a href="#">
-                      Khen thưởng hai người giúp du khách Australia tìm lại nhẫn
-                      kim cương</a
-                    >
-                  </h6>
-                  <p class="mb-1 text-muted small text-ellipsis-3">
-                    ĐÀ NẴNG – Anh Phan Thanh Trinh và Phạm Nhữ Đông...
-                  </p>
-                  <p class="text-muted small">
-                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
-                  </p>
+            <div
+              class="item-slide col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0"
+            >
+              <div class="border-0 px-2">
+                <div class="d-flex mb-4">
+                  <div class="img">
+                    <img
+                      src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                      alt="Bộ Xây dựng"
+                      class="me-3 img-fluid"
+                    />
+                  </div>
+                  <div class="align-items-center nd-slide">
+                    <h6 class="fw-bold mb-1">
+                      <a href="#"
+                        >Bộ Xây dựng đặt mục tiêu đóng góp trên 20% GDP cả
+                        nước</a
+                      >
+                    </h6>
+                    <p class="mb-1 text-muted small text-ellipsis-3">
+                      Ngành xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào
+                      năm 2025... Ngành xây dựng phấn đấu đóng góp trực tiếp hơn
+                      18% GDP vào năm 2025... Ngành xây dựng phấn đấu đóng góp
+                      trực tiếp hơn 18% GDP vào năm 2025... Ngành xây dựng phấn
+                      đấu đóng góp trực tiếp hơn 18% GDP vào năm 2025... Ngành
+                      xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào năm
+                      2025...
+                    </p>
+                    <p class="text-muted small">
+                      2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="danh-cho-ban pb-3">
-              <h5 class="pb-2"><a href="#">Dành cho bạn</a></h5>
-
-              <!-- Bài viết 1 -->
-              <div class="d-flex mb-4">
-                <img
-                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
-                  alt="Bộ Xây dựng"
-                  class="me-3"
-                  style="width: 160px; height: auto"
-                />
-                <div>
-                  <h6 class="fw-bold mb-1">
-                    <a href="#"
-                      >Bộ Xây dựng đặt mục tiêu đóng góp trên 20% GDP cả nước</a
-                    >
-                  </h6>
-                  <p class="mb-1 text-muted small text-ellipsis-3">
-                    Ngành xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào
-                    năm 2025...
-                  </p>
-                  <p class="text-muted small">
-                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
-                  </p>
-                </div>
-              </div>
-
-              <!-- Bài viết 2 -->
-              <div class="d-flex mb-4">
-                <img
-                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
-                  alt="Phủ đào Thanh Hóa"
-                  class="me-3"
-                  style="width: 160px; height: auto"
-                />
-                <div>
-                  <h6 class="fw-bold mb-1">
-                    <a href="#">
-                      Thủ phủ đào phai ở Thanh Hóa chết khô sau mưa lũ
-                    </a>
-                  </h6>
-                  <p class="mb-1 text-muted small text-ellipsis-3">
-                    Sau đợt mưa lũ kéo dài do ảnh hưởng của bão Wipha...
-                  </p>
-                  <p class="text-muted small">
-                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
-                  </p>
-                </div>
-              </div>
-
-              <!-- Bài viết 3 -->
-              <div class="d-flex mb-4">
-                <img
-                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
-                  alt="Giúp khách Úc tìm kim cương"
-                  class="me-3"
-                  style="width: 160px; height: auto"
-                />
-                <div>
-                  <h6 class="fw-bold mb-1">
-                    <a href="#">
-                      Khen thưởng hai người giúp du khách Australia tìm lại nhẫn
-                      kim cương</a
-                    >
-                  </h6>
-                  <p class="mb-1 text-muted small text-ellipsis-3">
-                    ĐÀ NẴNG – Anh Phan Thanh Trinh và Phạm Nhữ Đông...
-                  </p>
-                  <p class="text-muted small">
-                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
-                  </p>
+            <div
+              class="item-slide col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0"
+            >
+              <div class="border-0 px-2">
+                <div class="d-flex mb-4">
+                  <div class="img">
+                    <img
+                      src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                      alt="Bộ Xây dựng"
+                      class="me-3 img-fluid"
+                    />
+                  </div>
+                  <div class="align-items-center nd-slide">
+                    <h6 class="fw-bold mb-1">
+                      <a href="#"
+                        >Bộ Xây dựng đặt mục tiêu đóng góp trên 20% GDP cả
+                        nước</a
+                      >
+                    </h6>
+                    <p class="mb-1 text-muted small text-ellipsis-3">
+                      Ngành xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào
+                      năm 2025... Ngành xây dựng phấn đấu đóng góp trực tiếp hơn
+                      18% GDP vào năm 2025... Ngành xây dựng phấn đấu đóng góp
+                      trực tiếp hơn 18% GDP vào năm 2025... Ngành xây dựng phấn
+                      đấu đóng góp trực tiếp hơn 18% GDP vào năm 2025... Ngành
+                      xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào năm
+                      2025...
+                    </p>
+                    <p class="text-muted small">
+                      2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="tin-moi pb-3">
-              <h5 class="pb-2"><a href="#">Tin mới</a></h5>
-
-              <!-- Bài viết 1 -->
-              <div class="d-flex mb-4">
-                <img
-                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
-                  alt="Bộ Xây dựng"
-                  class="me-3"
-                  style="width: 160px; height: auto"
-                />
-                <div>
-                  <h6 class="fw-bold mb-1">
-                    <a href="#"
-                      >Bộ Xây dựng đặt mục tiêu đóng góp trên 20% GDP cả nước</a
-                    >
-                  </h6>
-                  <p class="mb-1 text-muted small text-ellipsis-3">
-                    Ngành xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào
-                    năm 2025...
-                  </p>
-                  <p class="text-muted small">
-                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
-                  </p>
+            <div
+              class="item-slide col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0"
+            >
+              <div class="border-0 px-2">
+                <div class="d-flex mb-4">
+                  <div class="img">
+                    <img
+                      src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                      alt="Bộ Xây dựng"
+                      class="me-3 img-fluid"
+                    />
+                  </div>
+                  <div class="align-items-center nd-slide">
+                    <h6 class="fw-bold mb-1">
+                      <a href="#"
+                        >Bộ Xây dựng đặt mục tiêu đóng góp trên 20% GDP cả
+                        nước</a
+                      >
+                    </h6>
+                    <p class="mb-1 text-muted small text-ellipsis-3">
+                      Ngành xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào
+                      năm 2025... Ngành xây dựng phấn đấu đóng góp trực tiếp hơn
+                      18% GDP vào năm 2025... Ngành xây dựng phấn đấu đóng góp
+                      trực tiếp hơn 18% GDP vào năm 2025... Ngành xây dựng phấn
+                      đấu đóng góp trực tiếp hơn 18% GDP vào năm 2025... Ngành
+                      xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào năm
+                      2025...
+                    </p>
+                    <p class="text-muted small">
+                      2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                    </p>
+                  </div>
                 </div>
-              </div>
-
-              <!-- Bài viết 2 -->
-              <div class="d-flex mb-4">
-                <img
-                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
-                  alt="Phủ đào Thanh Hóa"
-                  class="me-3"
-                  style="width: 160px; height: auto"
-                />
-                <div>
-                  <h6 class="fw-bold mb-1">
-                    <a href="#">
-                      Thủ phủ đào phai ở Thanh Hóa chết khô sau mưa lũ
-                    </a>
-                  </h6>
-                  <p class="mb-1 text-muted small text-ellipsis-3">
-                    Sau đợt mưa lũ kéo dài do ảnh hưởng của bão Wipha...
-                  </p>
-                  <p class="text-muted small">
-                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
-                  </p>
-                </div>
-              </div>
-
-              <!-- Bài viết 3 -->
-              <div class="d-flex mb-4">
-                <img
-                  src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
-                  alt="Giúp khách Úc tìm kim cương"
-                  class="me-3"
-                  style="width: 160px; height: auto"
-                />
-                <div>
-                  <h6 class="fw-bold mb-1">
-                    <a href="#">
-                      Khen thưởng hai người giúp du khách Australia tìm lại nhẫn
-                      kim cương</a
-                    >
-                  </h6>
-                  <p class="mb-1 text-muted small text-ellipsis-3">
-                    ĐÀ NẴNG – Anh Phan Thanh Trinh và Phạm Nhữ Đông...
-                  </p>
-                  <p class="text-muted small">
-                    2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
-                  </p>
-                </div>
-              </div>
-              <div class="button-tin-moi w-100">
-                <button
-                  type="button  "
-                  class="btn btn-outline-secondary w-100 py-3 fw-bold"
-                >
-                  Xem thêm tin mới
-                </button>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-5 col-sm-12">
-            <div class="border p-2 bg-white scrollable-content">
-              <!-- Các mục tin tức của bạn ở đây -->
-              <div class="d-flex mb-3 pb-3 border-bottom">
-                <div class="flex-grow-1 pe-2">
-                  <a
-                    href="#"
-                    class="text-dark fw-semibold text-decoration-none"
-                  >
-                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
-                    kê
-                  </a>
-                </div>
-                <div style="width: 80px; flex-shrink: 0">
-                  <img
-                    src="../images/banner-tin-tuc.png"
-                    alt="news"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="d-flex mb-3 pb-3 border-bottom">
-                <div class="flex-grow-1 pe-2">
-                  <a
-                    href="#"
-                    class="text-dark fw-semibold text-decoration-none"
-                  >
-                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
-                    kê
-                  </a>
-                </div>
-                <div style="width: 80px; flex-shrink: 0">
-                  <img
-                    src="../images/banner-tin-tuc.png"
-                    alt="news"
-                    class="img-fluid"
-                  />
+            <div
+              class="item-slide col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0"
+            >
+              <div class="border-0 px-2">
+                <div class="d-flex mb-4">
+                  <div class="img">
+                    <img
+                      src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                      alt="Bộ Xây dựng"
+                      class="me-3 img-fluid"
+                    />
+                  </div>
+                  <div class="align-items-center nd-slide">
+                    <h6 class="fw-bold mb-1">
+                      <a href="#"
+                        >Bộ Xây dựng đặt mục tiêu đóng góp trên 20% GDP cả
+                        nước</a
+                      >
+                    </h6>
+                    <p class="mb-1 text-muted small text-ellipsis-3">
+                      Ngành xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào
+                      năm 2025... Ngành xây dựng phấn đấu đóng góp trực tiếp hơn
+                      18% GDP vào năm 2025... Ngành xây dựng phấn đấu đóng góp
+                      trực tiếp hơn 18% GDP vào năm 2025... Ngành xây dựng phấn
+                      đấu đóng góp trực tiếp hơn 18% GDP vào năm 2025... Ngành
+                      xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào năm
+                      2025...
+                    </p>
+                    <p class="text-muted small">
+                      2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="d-flex mb-3 pb-3 border-bottom">
-                <div class="flex-grow-1 pe-2">
-                  <a
-                    href="#"
-                    class="text-dark fw-semibold text-decoration-none"
-                  >
-                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
-                    kê
-                  </a>
-                </div>
-                <div style="width: 80px; flex-shrink: 0">
-                  <img
-                    src="../images/banner-tin-tuc.png"
-                    alt="news"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="d-flex mb-3 pb-3 border-bottom">
-                <div class="flex-grow-1 pe-2">
-                  <a
-                    href="#"
-                    class="text-dark fw-semibold text-decoration-none"
-                  >
-                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
-                    kê
-                  </a>
-                </div>
-                <div style="width: 80px; flex-shrink: 0">
-                  <img
-                    src="../images/banner-tin-tuc.png"
-                    alt="news"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="d-flex mb-3 pb-3 border-bottom">
-                <div class="flex-grow-1 pe-2">
-                  <a
-                    href="#"
-                    class="text-dark fw-semibold text-decoration-none"
-                  >
-                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
-                    kê
-                  </a>
-                </div>
-                <div style="width: 80px; flex-shrink: 0">
-                  <img
-                    src="../images/banner-tin-tuc.png"
-                    alt="news"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="d-flex mb-3 pb-3 border-bottom">
-                <div class="flex-grow-1 pe-2">
-                  <a
-                    href="#"
-                    class="text-dark fw-semibold text-decoration-none"
-                  >
-                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
-                    kê
-                  </a>
-                </div>
-                <div style="width: 80px; flex-shrink: 0">
-                  <img
-                    src="../images/banner-tin-tuc.png"
-                    alt="news"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="d-flex mb-3 pb-3 border-bottom">
-                <div class="flex-grow-1 pe-2">
-                  <a
-                    href="#"
-                    class="text-dark fw-semibold text-decoration-none"
-                  >
-                    Hệ lụy tiềm ẩn khi ông Trump sa thải lãnh đạo cơ quan thống
-                    kê
-                  </a>
-                </div>
-                <div style="width: 80px; flex-shrink: 0">
-                  <img
-                    src="../images/banner-tin-tuc.png"
-                    alt="news"
-                    class="img-fluid"
-                  />
+            </div>
+            <div
+              class="item-slide col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0"
+            >
+              <div class="border-0 px-2">
+                <div class="d-flex mb-4">
+                  <div class="img">
+                    <div class="img">
+                      <img
+                        src="../images/7-Dai-bieu-chup-anh-luu-niem.png"
+                        alt="Bộ Xây dựng"
+                        class="me-3 img-fluid"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="align-items-center nd-slide">
+                    <h6 class="fw-bold mb-1">
+                      <a href="#"
+                        >Bộ Xây dựng đặt mục tiêu đóng góp trên 20% GDP cả
+                        nước</a
+                      >
+                    </h6>
+                    <p class="mb-1 text-muted small text-ellipsis-3">
+                      Ngành xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào
+                      năm 2025... Ngành xây dựng phấn đấu đóng góp trực tiếp hơn
+                      18% GDP vào năm 2025... Ngành xây dựng phấn đấu đóng góp
+                      trực tiếp hơn 18% GDP vào năm 2025... Ngành xây dựng phấn
+                      đấu đóng góp trực tiếp hơn 18% GDP vào năm 2025... Ngành
+                      xây dựng phấn đấu đóng góp trực tiếp hơn 18% GDP vào năm
+                      2025...
+                    </p>
+                    <p class="text-muted small">
+                      2h trước · <a href="#" class="fs-6 fw-normal">Thời sự</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <button class="btn-next ms-2">
+            <img src="../images/circle-right-solid.png" alt="" />
+          </button>
         </div>
       </div>
     </section>
 
-    <script src="../js/jquery/jquery.js"></script>
-    <script src="../js/bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <section id="footer" class="m-0">
+      <div class="container text-white py-5">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <h3 class="text-uppercase text-white">Trường Đại học Cửu Long</h3>
+            <address
+              class="dia-chi mb-0 d-flex flex-column justify-content-between"
+            >
+              <p>Quốc lộ 1A, Xã Phú Quới, Huyện Long Hồ, Tỉnh Vĩnh Long</p>
+              <p>Điện thoại:<a href="tel:02703831155"> 02703831155 </a></p>
+              <p>
+                Email:
+                <a href="mailto:cuulonguniversity@mku.edu.vn"
+                  >cuulonguniversity@mku.edu.vn</a
+                >
+              </p>
+              <p>
+                Website:
+                <a href="https://cuulong.edu.vn">https://cuulong.edu.vn</a>
+              </p>
+              <p>
+                Facebook:
+                <a href="https://www.facebook.com/cuulonguniversity"
+                  >https://www.facebook.com/cuulonguniversity</a
+                >
+              </p>
+            </address>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-6 d-flex flex-column justify-content-between"
+          >
+            <div class="icon d-flex">
+              <div class="img me-3">
+                <img
+                  class="img-fluid"
+                  src="../images/facebook-icon.png"
+                  alt=""
+                />
+              </div>
+              <div class="img me-3">
+                <img
+                  class="img-fluid"
+                  src="../images/instagram-icon.png"
+                  alt=""
+                />
+              </div>
+              <div class="img me-3">
+                <img
+                  class="img-fluid"
+                  src="../images/youtube-icon.png"
+                  alt=""
+                />
+              </div>
+              <div class="img me-3">
+                <img class="img-fluid" src="../images/x-icon.png" alt="" />
+              </div>
+            </div>
+            <div class="title-1">
+              <p>
+                Các kênh thông tin đang hoạt động chính thức của trườngĐại học
+                Cửu Long trên mạng xã hội: Facebook, Zalo, Youtube,…
+              </p>
+            </div>
+            <div class="title-2">
+              <p>
+                Bản quyền thuộc về TRƯỜNG ĐẠI HỌC CỬU LONGQuốc lộ 1A xã Phú Quới
+                huyện Long Hồ tỉnh Vĩnh Long
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-2 d-flex flex-column justify-content-between footer-menu"
+          >
+            <ul class="list-unstyled fw-bold text-white m-0">
+              <li class="text-danger"><a href="#">Trang chủ</a></li>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Tuyển sinh</a></li>
+              <li><a href="#">Đào tạo</a></li>
+              <li><a href="#">Các Khoa - Viện</a></li>
+              <li><a href="#">Khoa học công nghệ</a></li>
+              <li><a href="#">Hợp tác quốc tế</a></li>
+              <li><a href="#">Nghiên cứu khoa học</a></li>
+              <li><a href="#">Hoạt động</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+  <script src="../js/jquery/jquery.js"></script>
+  <script src="../js/bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/slick/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="../js/slide.js"></script>
 </html>
